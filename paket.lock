@@ -3,6 +3,7 @@ NUGET
     Antlr (3.4.1.9004) - framework: >= net452
     bootstrap (3.0) - framework: >= net452
       jQuery (>= 1.9)
+    FAKE (4.58.6)
     FSharp.Core (4.1.2)
       System.Collections (>= 4.0.11) - framework: >= netstandard16
       System.Console (>= 4.0) - framework: >= netstandard16

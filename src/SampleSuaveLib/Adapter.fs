@@ -6,11 +6,11 @@ open App
 
 type Handler() =
     interface IHttpModule with
-        member this.Init(application: HttpApplication) =
+        member __.Init(application: HttpApplication) =
             application.BeginRequest.Add(fun _ ->
                 if tryRunWebPartFromContext app application.Context then
                     application.Context.Response.End()
 
             )
 
-        member this.Dispose() = ignore()
+        member __.Dispose() = ignore()

@@ -1,0 +1,19 @@
+type project
+title
+    Suave.AspNetHttpModule
+owners
+    davidtme
+authors
+    davidtme
+projectUrl
+    https://github.com/davidtme/Suave.AspNetHttpModule
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2017, davidtme
+tags
+    fsharp suave system.net.http
+summary
+    Suave via asp.net
+description
+    TODO

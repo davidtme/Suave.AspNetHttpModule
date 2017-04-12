@@ -1,6 +1,7 @@
 source https://www.nuget.org/api/v2
 nuget Antlr 3.4.1.9004 framework: >= net452
 nuget bootstrap 3.0.0 framework: >= net452
+nuget fake
 nuget FSharp.Core
 nuget jQuery 1.10.2 framework: >= net452
 nuget Microsoft.ApplicationInsights 2.2.0 framework: >= net452

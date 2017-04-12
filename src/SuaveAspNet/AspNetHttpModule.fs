@@ -7,7 +7,7 @@ open Suave
 open Suave.Http
 open System
 
-let suaveHttpMethod (method : string) = 
+let suaveHttpMethod (method : string) =
     match method.ToUpperInvariant() with
     | "GET" -> HttpMethod.GET
     | "PUT" -> HttpMethod.PUT
@@ -27,8 +27,8 @@ let suaveHeaders (headers : NameValueCollection) =
         let value = headers.[key]
         result @ [key, value]) []
 
-let tryRunWebPartFromContext app (context : System.Web.HttpContext) =
-    let req = 
+let tryRunWebPartFromContext app (context : Web.HttpContext) =
+    let req =
         { HttpRequest.empty with
             headers  = suaveHeaders context.Request.Headers
             url = context.Request.Url
@@ -36,18 +36,18 @@ let tryRunWebPartFromContext app (context : System.Web.HttpContext) =
 
     let ctx = { HttpContext.empty with request = req }
 
-    let result = 
+    let result =
         async {
             return! app ctx
         } |> Async.RunSynchronously
 
     match result with
     | Some (resultCtx : HttpContext) ->
-        let contents = 
+        let contents =
             match resultCtx.response.content with
             | Bytes b -> b
             | _ -> invalidOp "Not handled yet"
-            
+
         context.Response.BinaryWrite(contents)
         true
 
