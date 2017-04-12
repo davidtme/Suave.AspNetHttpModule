@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{73ef6c76-7041-41c6-8f7b-46abf321514f}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>SuaveAspNet</RootNamespace>
     <AssemblyName>SampleSuaveLib</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -67,6 +67,7 @@
     <None Include="paket.references" />
     <Compile Include="App.fs" />
     <Compile Include="Adapter.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
