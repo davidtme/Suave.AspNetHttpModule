@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{D9E8D1C9-0A80-4D7C-960C-4C2773E9BEBA}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,6 +13,12 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleSuaveLib", "src\SampleSuaveLib\SampleSuaveLib.fsproj", "{73EF6C76-7041-41C6-8F7B-46ABF321514F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleSuaveWeb", "src\SampleSuaveWeb\SampleSuaveWeb.csproj", "{84CF6FE4-5A26-4F14-8731-AE0D08DC416D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0F27F661-0AE3-4276-BA49-8954DBD045BC}"
+	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+		build.fsx = build.fsx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

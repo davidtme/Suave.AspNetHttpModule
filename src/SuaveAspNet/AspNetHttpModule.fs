@@ -53,3 +53,9 @@ let tryRunWebPartFromContext app (context : Web.HttpContext) =
 
     | _ ->
         false
+
+let handleApplication app (application: HttpApplication) =
+    application.BeginRequest.Add(fun _ ->
+        if tryRunWebPartFromContext app application.Context then
+            application.Context.Response.End()
+    )

@@ -2,12 +2,12 @@
 namespace System
 open System.Reflection
 
-[<assembly: AssemblyVersionAttribute("0.0.1")>]
-[<assembly: AssemblyFileVersionAttribute("0.0.1")>]
+[<assembly: AssemblyVersionAttribute("0.0.2")>]
+[<assembly: AssemblyFileVersionAttribute("0.0.2")>]
 [<assembly: AssemblyTitleAttribute("Suave.AspNetHttpModule")>]
 do ()
 
 module internal AssemblyVersionInformation =
-    let [<Literal>] AssemblyVersion = "0.0.1"
-    let [<Literal>] AssemblyFileVersion = "0.0.1"
+    let [<Literal>] AssemblyVersion = "0.0.2"
+    let [<Literal>] AssemblyFileVersion = "0.0.2"
     let [<Literal>] AssemblyTitle = "Suave.AspNetHttpModule"

@@ -3,7 +3,7 @@ open Fake
 open Fake.AssemblyInfoFile
 
 let buildDir = "./Build/"
-let version = "0.0.1"
+let version = "0.0.2"
 
 Target "Clean" (fun _ ->
     CleanDirs [ buildDir; "src/SuaveAspNet/bin" ]
