@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{D9E8D1C9-0A80-4D7C-960C-4C2773E9BEBA}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Suave.AspNetHttpModule", "src\SuaveAspNet\Suave.AspNetHttpModule.fsproj", "{73E52256-F0E2-4FA9-BE7C-F04326AC1EBF}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleSuaveLib", "src\SampleSuaveLib\SampleSuaveLib.fsproj", "{73EF6C76-7041-41C6-8F7B-46ABF321514F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleSuaveWeb", "src\SampleSuaveWeb\SampleSuaveWeb.csproj", "{84CF6FE4-5A26-4F14-8731-AE0D08DC416D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73E52256-F0E2-4FA9-BE7C-F04326AC1EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73E52256-F0E2-4FA9-BE7C-F04326AC1EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73E52256-F0E2-4FA9-BE7C-F04326AC1EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73E52256-F0E2-4FA9-BE7C-F04326AC1EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EF6C76-7041-41C6-8F7B-46ABF321514F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EF6C76-7041-41C6-8F7B-46ABF321514F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EF6C76-7041-41C6-8F7B-46ABF321514F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EF6C76-7041-41C6-8F7B-46ABF321514F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84CF6FE4-5A26-4F14-8731-AE0D08DC416D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CF6FE4-5A26-4F14-8731-AE0D08DC416D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CF6FE4-5A26-4F14-8731-AE0D08DC416D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CF6FE4-5A26-4F14-8731-AE0D08DC416D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
