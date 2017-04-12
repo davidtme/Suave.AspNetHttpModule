@@ -23,7 +23,7 @@ PM> Install-Package Suave.AspNetHttpModule
 
 
 
-Create a new type that will be visible to your asp.net application
+Create a new type that will be visible to your asp.net application either in your Suave F# App
 
 ```F#
 namespace SampleSuaveLib
@@ -37,7 +37,27 @@ type Handler() =
         member __.Dispose() = ignore()
 ```
 
-Then add the handler to the web config
+or in your asp.net app (Such as the App_Start folder):
+
+```C#
+using System.Web;
+
+namespace SampleSuaveWeb.App_Start
+{
+    public class AppHandler : IHttpModule
+    {
+        public void Init(HttpApplication context)
+        {
+            Suave.AspNetHttpModule.handleApplication(SampleSuaveLib.App.app, context);
+        }
+
+        public void Dispose() { }
+    }
+}
+
+```
+
+Then add the handler to the web config:
 
 ``` XML
 <modules>
