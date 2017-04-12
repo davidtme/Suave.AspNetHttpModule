@@ -66,9 +66,6 @@
   <ItemGroup>
     <None Include="paket.references" />
     <Compile Include="AspNetHttpModule.fs" />
-    <Compile Include="Library1.fs" />
-    <Compile Include="AspNetAdapter.fs" />
-    <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
